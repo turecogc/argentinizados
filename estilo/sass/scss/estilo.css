@@ -1,0 +1,442 @@
+/*reseteo de valores*/
+*{
+	margin: 1px;
+	padding: 2px;
+	border: 2px;
+	content: normal;
+}
+
+/*PAGINA PRINCIPAL*/
+
+.grid {
+	border: white solid 2px;
+	display: grid;
+	grid-template-columns: 3fr 1fr/*2columnas*/;
+	grid-template-rows: 1fr/*2 filas*/
+}
+
+.titulo{
+	color:white;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 25px;
+	font-style: inherit;
+	text-align: center;
+	letter-spacing: 0.5cm;
+	border-bottom: thin;
+	animation-name: agrandar;
+	animation-delay: 0s;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+}
+
+/* Linea de tiempo - animaciones */
+	
+@keyframes agrandar {
+		
+	0% {
+transform: scale(1);
+	}
+
+	25%{
+	transform: scale(1.25);
+	}
+
+	50%{ 
+transform: scale(1.50);
+	}
+
+	75%{ 
+transform: scale(1.25);
+	}
+
+	100% {
+transform: scale(1);
+	}
+}
+
+.spotify {
+	color:#1496B8;
+	font-family: 'Raleway', sans-serif;
+	font-size: 13pt;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0%;
+	}
+
+.subtitulo{
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 15pt;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.text{
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-size: 10pt;
+	text-align: left;
+	text-align: justify;
+}	
+
+.protagonistas {
+	width: 25%;
+	border: white 1px solid;
+	display: inline-flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	margin-right: 0.1%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*menu*/
+
+.menu {
+	background-color: #ffff;
+	text-align: center;
+	word-spacing: 0.1 cm;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row nowrap;
+	border: #1496B8 solid 1px;
+	transition: all 1ms;
+}
+
+.menu:hover {
+background-color: whitesmoke;
+
+}
+
+.submenu {
+	background-color: #ffff;
+	display: flex;
+	flex-direction: row nowrap;
+	border: #1496B8 solid 2px;
+	margin: 0.2cm;
+	text-transform: uppercase;
+	text-align: center;
+	justify-content: center;
+	flex-direction: row wrap;
+	font-size: 15px;
+	font-family: 'Raleway', sans-serif;
+}
+
+/*subpaginas*/
+
+.titulo2 {
+	color:white;
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-style: inherit;
+	text-align: left;
+	letter-spacing: 0.1cm;
+	margin left: 2px;
+	border-bottom: solid white 1px;
+}
+
+.spotify2 {
+	color:#1496B8;
+	font-family: 'Raleway', sans-serif;
+	font-size: 10px;
+	text-align: left;
+	text-transform: uppercase;
+	margin-left: 2cm;
+}
+
+.text2{
+	color:whitesmoke;
+	font-family: 'Raleway', sans-serif;
+	font-size: 10pt;
+	text-align: center;
+	margin: 2%;	
+	text-align: center;
+}	
+
+.grid {
+	border: white solid 1px;
+	display: grid;
+	grid-template-columns: 2fr 1fr/*2columnas*/;
+	grid-template-rows: 1fr/*2 filas*/
+}
+
+
+#box {
+	background-color: #ffff;
+	text-align: justify;
+	display: inline;
+	list-style: none;
+}
+.
+section{
+	color: #2f566a;
+}
+
+/*imagenes chicas*/
+
+.imgchica	{
+	border-color: grey;
+	border: #21343D 2px solid;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-direction: column;
+	width: 150px;
+	height: 150px;
+}
+
+table{
+	border-color: rgb(168, 168, 255);
+	border-style: dashed;
+	border-radius: 0cm;
+	border-image: fill;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.tablas {
+	width: 15%;
+	border-color: lightblue;
+	border-radius: 5%;
+	border-style: solid;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin-left: 50px;
+}
+
+.formulario{
+	border: white dashed 2px;
+	text-decoration-color: #010d14;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	display: inline;
+}
+
+.estudio{
+	color: #2f566a;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	text-align: center;
+	animation-name: efecto;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+	animation-delay: 0s;
+}
+
+/* Linea de tiempo - animaciones */
+	
+@keyframes efecto {
+	/*origen de la animacion*/
+		
+	0% {
+		width: 20px;
+		background-color: white;
+		transform: translate(25px);
+	}
+	25%{
+		background-color: #b1d4e9;
+		transform: translate(-25px);
+	}
+	50%{ 
+		background-color: white;
+		transform: translate(25px);
+	}
+	75%{ 
+		background-color: white;
+		transform: translate(-25px);
+	}
+	100% {/*fin*/
+		transform: translate(25px);
+		background-color: white;}
+	}
+
+a{
+	color: #1496B8;
+	font-family: 'Raleway', sans-serif;
+	font-size: 10pt;
+	text-decoration: none;
+	text-align: center;
+}
+
+body{
+	background-color: #B8D3DF;
+	background-image: linear-gradient(to left, #B8D3DF,#1496B8);
+	height: 100vh;
+}
+
+.normal	{
+	font-style: normal;
+	font-weight: normal	
+}
+
+.italic	{
+	font-style: italic;
+	}
+
+.negrita{
+	font-weight:bold;
+}
+
+.centrar {
+	text-align: center;
+	align-items: center;
+}
+
+.mayuscula{
+	text-transform: uppercase;
+	font-size: 25px;
+	font-style: normal;
+}
+
+.interlineadopequeño{
+	line-height: 2;
+}
+
+.subrayado{
+	text-decoration: underline;
+}
+
+.ninguno{
+	text-decoration: none;
+}
+
+.espaciado {
+	letter-spacing: 2px;
+}
+
+/*menu paginas secundarias*/
+
+html{
+	font-size: 62.5%;
+}
+
+.boton{
+	font-size: 14px;
+	color: black;
+	background-color: white;
+	border: #b1d4e9;
+	border-style: dotted;
+	border-spacing: 0.2cm;
+}
+
+article {
+	width: 70%;
+	height: 50px;
+	border: solid #21343D	1px;
+	text-align: left;
+	overflow: hidden;
+	margin-bottom: 10px;
+	margin-left: 15px;
+	padding: 10px 5px 5px 5px;
+}
+
+/*display al lado del otro*/
+
+.inline{
+	list-style-type: none;
+	overflow: hidden;
+	display: inline-block;
+}
+
+/*quienes somos, descripción*/
+
+.boxquienes {
+	background-color: black;
+	text-align: center;
+	word-spacing: 0.1 cm;
+	border: #010d14 3px	solid;
+}
+
+/*LOGO*/
+
+.logo{
+	position: fixed;
+}
+
+.news{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	background-color: whitesmoke;
+	border: #010d14	dashed 1px;
+	text-align: left;
+	margin: 2%;
+}
+
+
+/*grid*/
+
+
+
+#grilla {
+display: grid;
+grid-template-areas: 
+/*nombres de cada area*/
+
+"menu  menu  menu"
+"cabeza columna"
+;
+
+/*tamaño de las columnas y filas*/
+
+grid-template-rows: ;
+grid-template-columns: ;
+
+/*huecos en grid*/
+
+grid-column-gap: 20px;
+grid-row-end: 10px;
+
+/*palabra clave
+
+none: no sale la celda
+(.) */
+}
+
+header {
+	grid-area: cabeza;
+	}
+
+body {
+		grid-area: cabeza;
+		}
+
+@media (max-width: 768px) {
+
+	#grilla {
+		grid-template-columns: repeat(3 fr, 1fr);
+		}
+
+		body {
+	background-color: #B8D3DF ;
+	}
+
+@media (min-width: 768px) {
+
+#grilla {
+		grid-template-columns: repeat(3 fr, 1fr);
+	}
+
+body {
+	border: #2f566a solid 1px;
+	background-color: #B8D3DF ;
+	}
+}
+
+@media (mix-width: 1024px) {
+	#grilla {
+		grid-template-columns: repeat(3 fr, 1fr);
+	}
+
+body {
+	border: #2f566a solid 1px;
+	background-color: #B8D3DF ;
+	}
+}
+
